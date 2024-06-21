@@ -1,0 +1,50 @@
+[{
+  "_id": {
+    "$oid": "665a032602c577f759ac4701"
+  },
+  "unicon_id": "unicon_1",
+  "position": {
+    "lat": 13.727961,
+    "lng": 100.772919
+  }
+},
+{
+  "_id": {
+    "$oid": "665a032602c577f759ac4702"
+  },
+  "unicon_id": "unicon_2",
+  "position": {
+    "lat": 13.727976,
+    "lng": 100.773678
+  }
+},
+{
+  "_id": {
+    "$oid": "665a032602c577f759ac4703"
+  },
+  "unicon_id": "unicon_3",
+  "position": {
+    "lat": 13.728036,
+    "lng": 100.775848
+  }
+},
+{
+  "_id": {
+    "$oid": "665a032602c577f759ac4704"
+  },
+  "unicon_id": "unicon_4",
+  "position": {
+    "lat": 13.728599,
+    "lng": 100.776028
+  }
+},
+{
+  "_id": {
+    "$oid": "665a032602c577f759ac4705"
+  },
+  "unicon_id": "unicon_5",
+  "position": {
+    "lat": 13.72991,
+    "lng": 100.777621
+  }
+}]
