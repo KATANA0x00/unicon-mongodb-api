@@ -1,13 +1,13 @@
 const express = require('express');
 const { MongoClient} = require('mongodb');
 const bodyParser = require('body-parser');
-const config = require('./config');
+require('dotenv').config();
 
 const app = express();
 app.use(bodyParser.json());
 
-const port = config.port;
-const client = new MongoClient(config.uri);
+const port = process.env.PORT;
+const client = new MongoClient(process.env.URI);
 
 async function run() {
     try {
@@ -16,9 +16,9 @@ async function run() {
         await client.db("admin").command({ ping: 1 });
         console.log("Pinged your deployment. You successfully connected to MongoDB!");
 
-        const database = client.db(config.databaseName);
-        const infoCollection = database.collection(config.infoCollection);
-        const positionCollection = database.collection(config.positionCollection);
+        const database = client.db(process.env.DBName);
+        const infoCollection = database.collection(process.env.infoCollection);
+        const positionCollection = database.collection(process.env.positionCollection);
 
         // Get all unicon_id
         app.get('/unicons', async (req, res) => {
